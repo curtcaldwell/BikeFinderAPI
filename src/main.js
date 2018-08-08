@@ -7,9 +7,7 @@ import { BikeSearch } from './bike.js';
 $(document).ready(function() {
   $('#stolenBike').click(function() {
     let city = $('#location').val();
-    $('#location').val("");
     let distance = $('#distance').val();
-    $('#distance').val("");
 
     let bikes = new BikeSearch();
     let promise = bikes.findBikeByCity(city, distance);
